@@ -1,0 +1,11 @@
+.head-container{
+    height: 10%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+  }
+.head-container > p {
+    margin-left: 25px;
+    color: white;
+    font-size: 40px;
+}
