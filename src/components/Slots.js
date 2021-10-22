@@ -1,36 +1,73 @@
 import React from "react";
 import "../css/Slots.css";
 import car from "../images/available-image.png"
+import parking from "../images/parking.jpg"
 
 function Slots() {
     return(
         <div className="slots">
-            <h1>Parking Slots Availability</h1>
-            <div  className="slots-container">
-            <div className="slot-single">
-            {/* <img src={car}/> */}
-            <img src="https://img.icons8.com/external-prettycons-flat-prettycons/350/fa314a/external-car-car-parts-vehicles-prettycons-flat-prettycons-5.png"/>
-            <h2>Slot 1</h2>
+            <h1>Smart Parking System</h1>
+            <div className="dia">
+            <div className="divider"></div>
+            <div className="lane">
+            <div className="slot-single-left">
+            <p>1</p>
+                <img src={parking}></img>
+              
             </div>
-            <div className="slot-single">
-            <img src={car}/>
-            {/* <img src="https://img.icons8.com/external-prettycons-flat-prettycons/350/fa314a/external-car-car-parts-vehicles-prettycons-flat-prettycons-5.png"/> */}
-            <h2>Slot 2</h2>
+            <div className="slot-single-right">
+          
+                <img src={parking}></img>
+                <p>2</p>
             </div>
-            <div className="slot-single">
-            {/* <img src={car}/> */}
-            <img src="https://img.icons8.com/external-prettycons-flat-prettycons/350/fa314a/external-car-car-parts-vehicles-prettycons-flat-prettycons-5.png"/>
-            <h2>Slot 3</h2>
             </div>
-            <div className="slot-single">
-            <img src={car}/>
-            {/* <img src="https://img.icons8.com/external-prettycons-flat-prettycons/350/fa314a/external-car-car-parts-vehicles-prettycons-flat-prettycons-5.png"/> */}
-            <h2>Slot 4</h2>
+            <div className="lane">
+            <div className="slot-single-left">
+            <p>1</p>
+                <img src={parking}></img>
+              
             </div>
-            <div className="slot-single">
-            {/* <img src={car}/> */}
-            <img src="https://img.icons8.com/external-prettycons-flat-prettycons/350/fa314a/external-car-car-parts-vehicles-prettycons-flat-prettycons-5.png"/>
-            <h2>Slot 5</h2>
+            <div className="slot-single-right">
+          
+                <img src={parking}></img>
+                <p>2</p>
+            </div>
+            </div>
+            <div className="lane">
+            <div className="slot-single-left">
+            <p>1</p>
+                <img src={parking}></img>
+              
+            </div>
+            <div className="slot-single-right">
+          
+                <img src={parking}></img>
+                <p>2</p>
+            </div>
+            </div>
+            <div className="lane">
+            <div className="slot-single-left">
+            <p>1</p>
+                <img src={parking}></img>
+              
+            </div>
+            <div className="slot-single-right">
+          
+                <img src={parking}></img>
+                <p>2</p>
+            </div>
+            </div>
+            <div className="lane">
+            <div className="slot-single-left">
+            <p>1</p>
+                <img src={parking}></img>
+              
+            </div>
+            <div className="slot-single-right">
+          
+                <img src={parking}></img>
+                <p>2</p>
+            </div>
             </div>
             </div>
         </div>

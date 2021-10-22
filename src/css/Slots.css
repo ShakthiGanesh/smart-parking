@@ -1,43 +1,96 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 .slots {
     width: 100%;
+    background-color: #fffbf0;
+    height: fit-content; 
+    padding-top: 5vh; 
 }
-.slots > h1 {
-    color: rgb(64, 18, 231);
-    font-size: 35px;
-    margin: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.slots-container{
-    display: flex;
-    flex-direction: row;
+.dia {
+    position: relative;
     width: 100%;
-    flex-wrap: wrap;  
-  }
-  .slot-single {
-      width: 33%;
-      height: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-  }
-.slot-single > img {
- width: 35%;
- height: 175px;
- padding: 20px;
+    height: fit-content;
+    /* left: 50%; */
+    top: 50%;
+    /* transform: translate(-50%,-50%); */
+    
 }
 
-@media(max-width: 720px) {
-    .slots-container {
-    flex-direction: column;
-    }
-    .slot-single {
-        width: 100%;
-    }
-    .slot-single > img {
-        width: 60%;
-        height: 30%;
-        padding: 20px;
-       }
+.divider {
+    height: 100%;
+    width: fit-content;
+}
+
+.divider::before {
+color: #2d2d2d;
+background-color: #2d2d2d;
+content: '';
+position: absolute;
+left: 50%;
+top: 50%;
+height: 100%;
+width: 20px;
+border-radius: 20px;
+transform: translate(-50%,-50%);
+}
+.slots > h1 {
+    color: #2d2d2d;
+    font-size: 30px;
+    margin: 30px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.slot-single-right {
+  position: absolute;
+  left: 50%;
+  padding: 20px;
+  border: 5px solid black;
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.lane {
+    width: 50vw;
+    height: 20vh;
+}
+.slot-single-left {
+    position: absolute;
+    right: 50%;
+    padding: 20px;
+    border: 5px solid black;
+    width: 20vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* margin-bottom: 5px; */
+}
+  .slot-single-left > img,.slot-single-right > img{
+      width: 80%;
+      height: 90%;
+  }
+.slot-single-left > p,.slot-single-right > p {
+    transform: rotate(90deg);
+    font-size: 25px;
+    font-weight: bold;
+    width: 20%;
+    text-align: center;
+    height: fit-content;
+}
+.slot-single-right > p {
+    transform: rotate(270deg);
+}
+
+@media (max-width: 720px) {
+ .lane {
+     width: 40vw;
+     height: 15vh;
+ }
+ .slot-single-left, .slot-single-right {
+    width: 40vw;
+    height: 15vh;
+ }
 }

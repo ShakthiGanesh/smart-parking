@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 .head-container{
     height: 10%;
-    background-color: orange;
+    background-color: #943d24;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 .head-container > p {
-    margin-left: 25px;
     color: white;
     font-size: 40px;
+    font-family: 'Rampart One', cursive;
 }
