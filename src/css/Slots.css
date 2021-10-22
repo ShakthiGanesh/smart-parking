@@ -2,9 +2,9 @@
 .slots {
     width: 100%;
     background-color: #fffbf0;
-    height: fit-content; 
+    height: 100%; 
     padding: 2vh 0; 
-   
+   /* overflow-y: hidden; */
 }
 .dia {
     position: relative;
@@ -46,7 +46,7 @@ transform: translate(-50%,-50%);
 }
 .slot-single-right {
   position: absolute;
-  left: 50.05%;
+  left: 50.0025%;
   padding: 20px;
   border: 5px solid black;
   width: 17vw;
@@ -120,6 +120,6 @@ transform: translate(-50%,-50%);
     height: 15vh;
  }
  .purple-car {
-     transform: scale(1,1.7);
+     transform: scale(1,1.6);
  }
 }
