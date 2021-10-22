@@ -1,8 +1,12 @@
 import React from "react";
 import "../css/Slots.css";
-import car from "../images/available-image.png"
+import redCar from "../images/red-car.jpg"
+import blueCar from "../images/blue-car.jpg"
+import greenCar from "../images/green-car.jpg"
+import greyCar from "../images/grey-car.jpg"
+import purpleCar from "../images/purple-car.jpg"
+import lGreenCar from "../images/light-green-car.jpg"
 import parking from "../images/parking.jpg"
-
 function Slots() {
     return(
         <div className="slots">
@@ -17,56 +21,56 @@ function Slots() {
             </div>
             <div className="slot-single-right">
           
-                <img src={parking}></img>
+                <img src={blueCar}></img>
                 <p>2</p>
             </div>
             </div>
             <div className="lane">
             <div className="slot-single-left">
-            <p>1</p>
-                <img src={parking}></img>
+            <p>3</p>
+                <img src={blueCar}></img>
               
             </div>
             <div className="slot-single-right">
           
-                <img src={parking}></img>
-                <p>2</p>
+                <img src={greenCar}></img>
+                <p>4</p>
             </div>
             </div>
             <div className="lane">
             <div className="slot-single-left">
-            <p>1</p>
-                <img src={parking}></img>
+            <p>5</p>
+                <img className="purple-car" src={lGreenCar}></img>
               
             </div>
             <div className="slot-single-right">
           
                 <img src={parking}></img>
-                <p>2</p>
+                <p>6</p>
             </div>
             </div>
             <div className="lane">
             <div className="slot-single-left">
-            <p>1</p>
-                <img src={parking}></img>
+            <p>7</p>
+                <img src={redCar}></img>
               
             </div>
             <div className="slot-single-right">
           
-                <img src={parking}></img>
-                <p>2</p>
+                <img src={greenCar}></img>
+                <p>8</p>
             </div>
             </div>
             <div className="lane">
             <div className="slot-single-left">
-            <p>1</p>
-                <img src={parking}></img>
+            <p>9</p>
+                <img src={purpleCar}></img>
               
             </div>
             <div className="slot-single-right">
           
-                <img src={parking}></img>
-                <p>2</p>
+                <img src={greyCar}></img>
+                <p>10</p>
             </div>
             </div>
             </div>
