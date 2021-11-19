@@ -90,6 +90,9 @@ transform: translate(-50%,-50%);
     text-align: center;
     height: fit-content;
 }
+.slot-single-left > p {
+    transform: rotate(270deg);
+}
 .slot-single-right > p {
     transform: rotate(270deg);
 }
@@ -107,6 +110,9 @@ transform: translate(-50%,-50%);
  .slots > h1 {
     font-size: 27px;
  }
+ .slot-single-left > p {
+    transform: rotate(90deg);
+}
  .slot-single-left > img {
      width: 90%;
  }
