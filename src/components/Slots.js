@@ -27,7 +27,7 @@ function Slots() {
             res.data.last_value=="0"?setSlot3(false):setSlot3(true);
         });    
 }, [])
-    //Slot update
+    //slot update
     useEffect(() => {
       console.log("Slot1"+slot1);
       console.log("Slot2"+slot2);
